@@ -1,0 +1,33 @@
+<html>
+    <head> <title> Family Book </title> </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <center>
+            <h2> Family Book </h2>
+            <hr> <hr>
+            <img src="https://en.islcollective.com/preview/201701/f/my-family-book-classroom-posters-flashcards-picture-dictionaries_94438_1.jpg" 
+            id="images">
+        <div>
+            <h3 id="text"> Hello, meet my family... </h3>
+        </div>
+        <button type="button" id="Next" onclick="update()"> Next </button>
+        <hr> <hr>    
+    </center>
+        <script>
+            var images=[
+            "Image/Papa.JPG","Image/Mama.jpg","Image/Yuvi.jpg","Image/Bella.jpg","Image/Chi-Baby.jpg"];
+var names =["Gautam Kohli","Sumaya Kohli","Yuvraj Kohli","Bella Kohli","Fluffy Kohli"];
+
+var i=0;
+
+function update(){
+document.getElementById("images").src = images[i]; 
+document.getElementById("text").innerHTML = names[i];
+i++;
+if (i==5){
+    i=0;
+}
+}
+        </script>
+    </body>
+</html>
